@@ -1,26 +1,19 @@
-class Person {
-    constructor(private name: string, private surname: string, 
-      private birthday: string, private gender: string){
-    }
-  
-    getName() {
-      return this.name;
-    }
-
-    getSurname() {
-      return this.surname;
-    }
-
-    getBirthday() {
-      return this.birthday;
-    }
-
-    getGender() {
-      return this.gender;
-    }
+abstract class Person {
+  constructor(protected name: string, protected surname: string, 
+    protected birthday: string, protected gender: string){
   }
   
-  let bruno =
+  abstract getName(): string;
+
+  abstract getSurname(): string;
+    
+  abstract getBirthday(): string;
+    
+  abstract getGender(): string;
+}
+
+  
+  /*let bruno =
     new Person("Bruno", "Arroyo", "02/11/1999", "male");
   
   let lupe =
@@ -31,5 +24,5 @@ class Person {
   person.forEach((persona) => {
     console.log(`I am ${persona.getName()} ${persona.getSurname()} , my birth is ${persona.getBirthday()} 
     and I'm ${persona.getGender()} `);
-  });
+  });*/
   
