@@ -1,9 +1,12 @@
 /**
  * Clase Teacher a partir de la clase abstacta Person 
  * que define los atributos de un estudiante
+ * 
  * tiene como atributos 4 tipo string de tipo protected: name, surname,
  * birthday y gender. y 1 atributo private: email
- * tiene como métodos 5 metodos de que actuan como getter
+ * 
+ * tiene como métodos 5 métodos de que actuan como getters y 5 métodos que
+ * actuan como setters
  */
 class Teacher extends Person {
   constructor(protected name: string, protected surname: string, 
@@ -29,6 +32,26 @@ class Teacher extends Person {
 
   getEmail() {
     return this.email
+  }
+
+  setName(name: string): void {
+    this.name = name;
+  }
+
+  setSurname(surname: string): void {
+    this.surname = surname;
+  }
+
+  setBirthday(birthday: string): void {
+    this.birthday = birthday;
+  }
+
+  setGender(gender: string): void {
+    this.gender = gender;
+  }
+
+  setEmail(email: string): void {
+    this.email = email;
   }
   
 }
