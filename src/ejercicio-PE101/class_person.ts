@@ -13,6 +13,7 @@ abstract class Person {
     protected birthday: string, protected gender: string){
   }
   
+  
   abstract getName(): string;
 
   abstract getSurname(): string;
