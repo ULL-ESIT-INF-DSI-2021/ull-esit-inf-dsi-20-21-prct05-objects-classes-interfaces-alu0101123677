@@ -38,8 +38,7 @@ let raichu =
 
 let pokedex = [bulbasur, ivysaur, venusaur, charmander, charmeleon, charizard, squirtle, wartortle, blastoise, pikachu, raichu];
 
-
 let combat =
-  new Combat("hola");
+  new Combat(pokedex[0], pokedex[1]);
 
 combat.start();

@@ -1,9 +1,12 @@
+import { Pokemon } from "./class_pokemon";
+
 export class Combat {
-  constructor(private name: string){
+  constructor(public pokemon1: Pokemon, public pokemon2: Pokemon){
     }
       
   start() {
-    console.log("El COMBATE TERMINA"); 
+    console.log("El COMBATE TERMINA");
+    console.log(`Los combatientes son: ${this.pokemon1.getName()} y ${this.pokemon2.getName()}`) 
   }
 
   damage(type: string, type_oponent: string, attack: number, defense: number): number {
