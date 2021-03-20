@@ -1,4 +1,4 @@
-export class Pokedex {
+export class Pokemon {
   constructor(private name: string, private weight: number, private height: number, 
     private type: string, private attack: number, private defense: number, 
     private speed: number, private healt: number){
