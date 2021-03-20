@@ -5,7 +5,7 @@ export class Article {
 
     }
    
-  APAFormat() {
-    console.log(`${this.autor}. (${this.date.getFullYear()}). ${this.title}. ${this.editorial}.`)
+  APAFormat(): string {
+    return `${this.autor}. (${this.date.getFullYear()}). ${this.title}. ${this.editorial}.`;
   }  
 }
