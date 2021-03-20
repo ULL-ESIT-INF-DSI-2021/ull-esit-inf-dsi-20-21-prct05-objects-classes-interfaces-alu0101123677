@@ -1,4 +1,4 @@
-class Pokedex {
+export class Pokedex {
   constructor(private name: string, private weight: number, private height: number, 
     private type: string, private attack: number, private defense: number, 
     private speed: number, private healt: number){
@@ -14,6 +14,10 @@ class Pokedex {
 
   getHeight() {
     return this.height;
+  }
+
+  getType() {
+    return this.type;
   }
 
   getAttack() {
@@ -32,13 +36,4 @@ class Pokedex {
     return this.healt;
   }
 }
-
-let bulbasur =
-  new Pokedex("bulbasur", 100, 2, "hierba", 80, 83, 80, 80);
-
-let pokemon = [bulbasur];
-
-pokemon.forEach((pokemons) => {
-  console.log(` el pokemon es ${pokemons.getName()}`);
-});
 
