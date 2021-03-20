@@ -1,6 +1,7 @@
 import {Pokemon} from './class_pokemon'
 import {Combat} from './class_combat'
 
+function main(pokemon1: number, pokemon2:number): number {
 console.log("Iniciamos el programa Pokedex");
 
 let bulbasur =
@@ -39,6 +40,9 @@ let raichu =
 let pokedex = [bulbasur, ivysaur, venusaur, charmander, charmeleon, charizard, squirtle, wartortle, blastoise, pikachu, raichu];
 
 let combat =
-  new Combat(pokedex[0], pokedex[1]);
+  new Combat(pokedex[pokemon1], pokedex[pokemon2]);
 
-combat.start();
+return combat.start();
+}
+
+console.log(main(5, 2));

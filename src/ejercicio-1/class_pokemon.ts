@@ -35,5 +35,37 @@ export class Pokemon {
   getHealt() {
     return this.healt;
   }
+
+  setName(name: string) {
+    this.name = name;
+  }
+
+  setWeight(weight: number) {
+    this.weight = weight;
+  }
+
+  setHeight(height: number) {
+    this.height = height;
+  }
+
+  setType(type: string) {
+    this.type = type;
+  }
+
+  setAttack(attack: number) {
+    this.attack = attack;
+  }
+
+  setDefense(defense: number) {
+    this.defense = defense;
+  }
+
+  setSpeed(speed: number) {
+    this.speed = speed;
+  }
+
+  setHealt(healt: number) {
+    this.healt = healt;
+  }
 }
 

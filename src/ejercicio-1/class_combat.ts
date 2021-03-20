@@ -4,13 +4,17 @@ export class Combat {
   constructor(public pokemon1: Pokemon, public pokemon2: Pokemon){
     }
       
-  start() {
-    console.log("El COMBATE TERMINA");
+  start(): number {
+    console.log("¡¡¡El COMBATE EMPIEZA!!!");
     console.log(`Los combatientes son: ${this.pokemon1.getName()} y ${this.pokemon2.getName()}`);
     let healt_zero: boolean = false;
+    console.log("");
+    let turn: number = 1;
+    let winner: number = 0;
     while (healt_zero == false) {
       let first: number = 1;
       let second: number = 2;
+      console.log(`Es el turno ${turn}`)
       if (this.pokemon1.getSpeed() <= this.pokemon2.getSpeed()) {
         first = 2;
         second = 1;
@@ -21,24 +25,45 @@ export class Combat {
       }
 
       if (first == 1) {
-       let damage: number = this.damage(this.pokemon1.getType(), this.pokemon2.getType(), this.pokemon1.getAttack(), this.pokemon2.getDefense());
-       console.log(`El pokemon ${this.pokemon1.getName()} hace ${damage} puntos de daño`);
+        let damage: number = Math.round(this.damage(this.pokemon1.getType(), this.pokemon2.getType(), this.pokemon1.getAttack(), this.pokemon2.getDefense()));
+        console.log(`${this.pokemon1.getName()} hace ${damage} puntos de daño`);
+        this.pokemon2.setHealt(this.pokemon2.getHealt() - damage);
       }
       else {
-        let damage: number = this.damage(this.pokemon2.getType(), this.pokemon1.getType(), this.pokemon2.getAttack(), this.pokemon1.getDefense());
+        let damage: number = Math.round(this.damage(this.pokemon2.getType(), this.pokemon1.getType(), this.pokemon2.getAttack(), this.pokemon1.getDefense()));
         console.log(`${this.pokemon2.getName()} hace ${damage} puntos de daño`);
+        this.pokemon1.setHealt(this.pokemon1.getHealt() - damage);
       }
 
       if (second == 2) {
-        let damage: number = this.damage(this.pokemon2.getType(), this.pokemon1.getType(), this.pokemon2.getAttack(), this.pokemon1.getDefense());
-        console.log(`El pokemon ${this.pokemon2.getName()} hace ${damage} puntos de daño`);
+        let damage: number = Math.round(this.damage(this.pokemon2.getType(), this.pokemon1.getType(), this.pokemon2.getAttack(), this.pokemon1.getDefense()));
+        console.log(`${this.pokemon2.getName()} hace ${damage} puntos de daño`);
+        this.pokemon1.setHealt(this.pokemon1.getHealt() - damage);
       }
       else {
-        let damage: number = this.damage(this.pokemon1.getType(), this.pokemon2.getType(), this.pokemon1.getAttack(), this.pokemon2.getDefense());
+        let damage: number = Math.round(this.damage(this.pokemon1.getType(), this.pokemon2.getType(), this.pokemon1.getAttack(), this.pokemon2.getDefense()));
         console.log(`${this.pokemon1.getName()} hace ${damage} puntos de daño`);
+        this.pokemon2.setHealt(this.pokemon2.getHealt() - damage);
       }
-      healt_zero = true;
+
+      console.log(`La vida de ${this.pokemon1.getName()} es de ${this.pokemon1.getHealt()}`);
+      console.log(`La vida de ${this.pokemon2.getName()} es de ${this.pokemon2.getHealt()}`);
+
+      if (this.pokemon1.getHealt() <= 0) {
+        console.log(`El combate ha terminado, el ganador es ${this.pokemon2.getName()}`);
+        healt_zero = true;
+        winner = 2;
+      }
+
+      if (this.pokemon2.getHealt() <= 0) {
+        console.log(`El combate ha terminado, el ganador es ${this.pokemon1.getName()}`);
+        healt_zero = true;
+        winner = 1;
+      }
+      console.log("");
+      turn++;
     }
+    return winner;
   }
 
   damage(type: string, type_oponent: string, attack: number, defense: number): number {
