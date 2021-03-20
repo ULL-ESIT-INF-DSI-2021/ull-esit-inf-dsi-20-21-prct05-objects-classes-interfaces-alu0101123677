@@ -8,7 +8,7 @@ export class Gestor {
       console.table(this.bibliografia, ["title"]);
     }
 
-    filter(filtro: string){
+    filter(filtro: string): string{
       let filtrado: Article[] = [];
       this.bibliografia.forEach((articulo) => {
         let keywords: string = articulo.keywords.join("");
@@ -21,6 +21,7 @@ export class Gestor {
       });
       console.table(filtrado, ["title"]);
       console.log(this.export(filtrado));
+      return filtrado[0].autor[0];
     }
 
     export(articulos: Article[]): string[]{

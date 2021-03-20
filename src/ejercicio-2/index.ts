@@ -1,6 +1,7 @@
 import {Article} from './class_article'
 import {Gestor} from './class_gestor'
 
+function main2(filtro: string): string {
 let article1 =
   new Article("A modifie descent method-based heuristic for binary quadratic knapsack problems with conflict graphs"
     ,["Isma Dahmani", "Mhand Hifi"], ["isma_dahmani@gmail.com", "mhand_hifi@gmail.com"], ["knapsack", "heuristic", "optimization", "descent"], 
@@ -37,4 +38,8 @@ let gestor =
 
 gestor.table();
 
-gestor.filter("algorithm");
+return gestor.filter(filtro);
+
+}
+
+console.log(main2("Sudeep"));
