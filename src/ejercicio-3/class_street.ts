@@ -29,7 +29,7 @@ export class Street {
         countBike++;
       if (vehiculo.type == "peaton")
         countPeaton++;
-      if (vehiculo.type == "Moto")
+      if (vehiculo.type == "moto")
         countMotorbike++;
       if (vehiculo.type == "patinete")
         countScooter++;
@@ -43,6 +43,7 @@ export class Street {
     console.log("Hay " + countMotorbike + " motos");
     console.log("Hay " + countScooter + " patinetes");
     console.log("Hay " + countTrain + " trenes");
+    console.log("");
   }
 
   addVehicule(tipo: string, velocidad: number){
@@ -50,6 +51,36 @@ export class Street {
       let car =
         new Car(velocidad);
       this.vehiculos.push(car);
+    }
+    if (tipo == "bus") {
+      let bus =
+        new Bus(velocidad);
+      this.vehiculos.push(bus);
+    }
+    if (tipo == "bicicleta") {
+      let bike =
+        new Bike(velocidad);
+      this.vehiculos.push(bike);
+    }
+    if (tipo == "peaton") {
+      let peaton =
+        new Peaton(velocidad);
+      this.vehiculos.push(peaton);
+    }
+    if (tipo == "moto") {
+      let moto =
+        new Motorbike(velocidad);
+      this.vehiculos.push(moto);
+    }
+    if (tipo == "patinete") {
+      let scooter =
+        new Scooters(velocidad); 
+      this.vehiculos.push(scooter);
+    }
+    if (tipo == "tren") {
+      let tren =
+        new Train(velocidad);
+      this.vehiculos.push(tren);
     }
   }
 
