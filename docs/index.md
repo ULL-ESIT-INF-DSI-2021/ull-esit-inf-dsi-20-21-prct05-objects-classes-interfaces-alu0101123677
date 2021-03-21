@@ -47,7 +47,7 @@ Lo que haremos es realizar un bucle for que recorra todo el array dado por param
 
 ## 4. Conclusiones
 
-En conclusión, este tipos de ejercicios para irse iniciando en **Typescript** y si ya se tiene conocimiento en programación son bastante entretenidos, útiles y diveros, si es cierto, que hay alguno que otro que son más complicados, pero se pueden llegar a las soluciones de diversas maneras igual que en la práctica anterior, además de profundizar en la utilización de **arrays**, **tuplas** y **enumerados**. 
+En conclusión, este tipos de ejercicios para ir aprendiendo y cogiendo buenas praxis en **Typescript** y si ya se tiene conocimiento en programación son bastante entretenidos, útiles y diveros, aunque se van haciendo más complicados que en ejercicios anteriores, pero se pueden llegar a las soluciones de diversas maneras igual que en la práctica anterior, además de profundizar en la utilización de **objetos**, **clases** e **interfaces**. 
 
 ## 5. Bibliografía
 
