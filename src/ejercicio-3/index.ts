@@ -20,14 +20,8 @@ function main3 (){
   calle1.addVehicule("moto", 100);
   calle1.addVehicule("tren", 1000);
   calle1.printStreet();
-
-  /*while (exit == false) {
-    console.log("¿Quiere salir del programa?");
-    let salida = prompt("Introduce si si quieres salir", "");
-
-    if (salida == "si")
-      exit = true;
-  }*/
+  calle1.eliminateVehicule(0);
+  calle1.printStreet();
 }
 
 main3();

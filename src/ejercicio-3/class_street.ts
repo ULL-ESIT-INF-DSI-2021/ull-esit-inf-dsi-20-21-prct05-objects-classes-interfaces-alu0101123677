@@ -84,7 +84,9 @@ export class Street {
     }
   }
 
-  eliminateVehicule(){}
+  eliminateVehicule(position: number){
+    this.vehiculos.splice(position, 1);
+  }
 
   sortSpeed(){}
 }
