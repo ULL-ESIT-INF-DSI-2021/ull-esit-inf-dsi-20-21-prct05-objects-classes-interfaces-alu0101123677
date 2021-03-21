@@ -7,10 +7,11 @@ import {Peaton} from './class_peaton'
 import {Scooters} from './class_scooters'
 import {Train} from './class_train'
 
+/**
+ * Función main que inicializa el objeto de la clase Street y un vector de los diversos vehiculos
+ */
 function main3 (){
   let vehiculos: (Car|Bus|Bike|Motorbike|Peaton|Scooters|Train)[] = []
-  let count: number = 0;
-  let exit: boolean = false;
 
   let calle1 =
     new Street ("Viana", "La Laguna", vehiculos);

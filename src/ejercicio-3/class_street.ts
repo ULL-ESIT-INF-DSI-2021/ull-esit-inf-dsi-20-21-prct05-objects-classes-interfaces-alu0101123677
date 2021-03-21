@@ -6,10 +6,23 @@ import {Peaton} from './class_peaton'
 import {Scooters} from './class_scooters'
 import {Train} from './class_train'
 
+/**
+ * Clase Street que muestra la cantidad de vehiculos diferentes en la calle
+ * añade vehiculos nuevos, elimina vehiculos y los ordena por velocidad.
+ * 
+ * Recibe un atributo de tipo string que indica el nombre de la calle, un tipo string que indica
+ * la direccion de la calle y un vector de objetos de las clases Car, Bus, Bike, Peaton, Motorbike, Scooters 
+ * y Train.
+ * 
+ * Contiene cuatro métodos, printStreet, addVehicule, eliminateVehicule y sortSpeed.
+ */
 export class Street {
   constructor(public name: string, public direction: string, public vehiculos: (Car|Bus|Bike|Peaton|Motorbike|Scooters|Train)[]) {
   }
-
+  
+  /**
+   * Función que muestra por pantalla cuanto vehiculos hay en Street
+   */
   printStreet(){
     console.log(`En la calle ${this.name} hay: `);
     let countCar:number = 0;
@@ -45,7 +58,12 @@ export class Street {
     console.log("Hay " + countTrain + " trenes");
     console.log("");
   }
-
+  
+  /**
+   * Función que añade vehiculos a Street
+   * @param tipo es un tipo string que define que tipo de vehiculo es
+   * @param velocidad es un tipo number que indica cuanta velocidad tiene el vehiculo
+   */
   addVehicule(tipo: string, velocidad: number){
     if (tipo == "coche") {
       let car =
@@ -83,11 +101,18 @@ export class Street {
       this.vehiculos.push(tren);
     }
   }
-
+  
+  /**
+   * Función que elimina un vehiculo de Street
+   * @param position de tipo number que indica que vehiculo eliminar
+   */
   eliminateVehicule(position: number){
     this.vehiculos.splice(position, 1);
   }
-
+  
+  /**
+   * Función que ordena los vehiculos  en cuestión de su velocidad
+   */
   sortSpeed(){
     this.vehiculos.sort(function(a, b) {
       if (a.speed > b.speed) {
