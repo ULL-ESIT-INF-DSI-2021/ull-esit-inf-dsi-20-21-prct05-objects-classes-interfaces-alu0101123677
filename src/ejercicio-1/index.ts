@@ -7,7 +7,7 @@ import {Combat} from './class_combat'
  * @param pokemon2 atributo tipo number que indica cual es el segundo pokemon del combate
  * @returns retorna un number que indica que pokemon a ganado
  */
-function main(pokemon1: number, pokemon2:number): number {
+export function main(pokemon1: number, pokemon2:number): number {
 console.log("Iniciamos el programa Pokedex");
 
 let bulbasur =
