@@ -94,7 +94,7 @@ export class Combat {
         return 50 * (attack / defense) * 1;         
     }
 
-   if (type == 'agua') {
+    if (type == 'agua') {
       if (type_oponent == 'fuego')
         return 50 * (attack / defense) * 2;
       if (type_oponent == 'hierba')
