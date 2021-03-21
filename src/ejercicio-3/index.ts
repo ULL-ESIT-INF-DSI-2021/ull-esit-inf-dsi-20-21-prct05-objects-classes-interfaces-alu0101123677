@@ -10,7 +10,7 @@ import {Train} from './class_train'
 /**
  * Función main que inicializa el objeto de la clase Street y un vector de los diversos vehiculos
  */
-function main3 (){
+export function main3 (){
   let vehiculos: (Car|Bus|Bike|Motorbike|Peaton|Scooters|Train)[] = []
 
   let calle1 =
