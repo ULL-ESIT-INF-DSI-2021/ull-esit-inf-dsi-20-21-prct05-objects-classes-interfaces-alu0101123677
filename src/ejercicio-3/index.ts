@@ -10,7 +10,7 @@ import {Train} from './class_train'
 /**
  * Función main que inicializa el objeto de la clase Street y un vector de los diversos vehiculos
  */
-export function main3 (){
+export function main3(): number{
   let vehiculos: (Car|Bus|Bike|Motorbike|Peaton|Scooters|Train)[] = []
 
   let calle1 =
@@ -20,13 +20,11 @@ export function main3 (){
   calle1.addVehicule("coche", 200);
   calle1.addVehicule("moto", 100);
   calle1.addVehicule("tren", 1000);
-  console.log(calle1.vehiculos);
   calle1.printStreet();
   calle1.sortSpeed();
   console.log(calle1.vehiculos);
   calle1.eliminateVehicule(0);
   calle1.printStreet();
-  console.log(calle1.vehiculos);
-}
 
-main3();
+  return calle1.vehiculos.length;
+}
