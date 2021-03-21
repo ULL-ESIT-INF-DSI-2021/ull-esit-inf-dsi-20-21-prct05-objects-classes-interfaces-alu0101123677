@@ -6,7 +6,7 @@ import {Gestor} from './class_gestor'
  * @param filtro tipo string con la palabra o palabras que actuan como filtro
  * @returns retorna un string para comprobar que la ejecución ha sido correcta
  */
-function main2(filtro: string): string {
+export function main2(filtro: string): string {
 let article1 =
   new Article("A modifie descent method-based heuristic for binary quadratic knapsack problems with conflict graphs"
     ,["Isma Dahmani", "Mhand Hifi"], ["isma_dahmani@gmail.com", "mhand_hifi@gmail.com"], ["knapsack", "heuristic", "optimization", "descent"], 
