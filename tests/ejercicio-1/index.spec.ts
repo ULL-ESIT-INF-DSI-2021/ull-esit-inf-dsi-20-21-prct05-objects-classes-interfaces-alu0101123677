@@ -6,4 +6,10 @@ describe('Función main del programa que inicializa los objetos de las clase pok
   it('main(5, 2) returns value 1', () => {
     expect(main(5, 2)).to.be.equal(1)
   });
+  it('main(2, 5) returns value 1', () => {
+    expect(main(2, 5)).to.be.equal(2)
+  });
+  it('main(0, 2) returns value 1', () => {
+    expect(main(0, 2)).to.be.equal(2)
+  });
 });
