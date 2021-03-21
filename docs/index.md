@@ -32,7 +32,20 @@ El método damage es una copia del ejercicio 9 de la práctica 3, calcula el da�
 
 ### [Ejercicio 2 Gestor bibliográfico.](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-alu0101123677/tree/master/src/ejercicio-2)
 
-En este ejercicio 
+En este ejercicio creamos las clases Article y Gestor.
+
+En la clase Article se definene los atributos de un articulo. Cuenta con 8 atributos, un string que sería el titulo, un array de string de string que indican los nombres de los autores, un array de string que indican el email de los autores, un array de string de palabras clave, un string que sería el abstrac, un tipo Date que sería la fecha de publicación, un tipo string que sería la editorial y un tipo number que serían las citaciones. Contamos también con un método APAFormat.
+
+El método APAFormat a partir de los atributos de la clase consigue el formato APA para revista electrónica sin DOI y lo retornamos como un string.
+
+En la clase Gestor llevamos a cabo la definición de un gestor bibliográfico, recibe un array de objetos de la clase Article y contiene tres métodos, table, filter y export.
+
+El método table muestra por pantalla los títulos de los diferentes articulos en formato tabla, mostrando el indice y el titulo de cada artículo usando el ``console.table``
+
+El método filter filtra los objetos del vector de Article pasandole por parametro de tipo string que sería el filtro y filtraría por editorial, palabras clave, fechas y autores. Esto lo hacemos creando un array de tipo Article vacio llamado ``filtrado`` y en un ``forEach`` que recorra el array que tiene como atributo la clase, en cada objeto buscaremos si la palabra que usamos para filtrar se encuentra en los diferentes campos del objeto, si es así realizamos un push en ``filtrado`` añadiendo el objeto en cuestión, luego mostramos por pantalla la tabla filtrada y llamamos al método export.
+
+El método export exporta el formato APA para revista electrónica sin DOI, recibe un array de objetos de Article y retorna un array de string donde cada string es el equivalente al formato APA de cada objeto.
+
 
 ### [Ejercicio 3 Medios de transporte.](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-alu0101123677/tree/master/src/ejercicio-3)
 
