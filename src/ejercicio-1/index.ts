@@ -50,5 +50,3 @@ let combat =
 
 return combat.start();
 }
-
-console.log(main(5, 2));
