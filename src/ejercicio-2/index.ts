@@ -1,6 +1,11 @@
 import {Article} from './class_article'
 import {Gestor} from './class_gestor'
 
+/**
+ * Función main que inicializa los objetos de la clases Article y Gestors
+ * @param filtro tipo string con la palabra o palabras que actuan como filtro
+ * @returns retorna un string para comprobar que la ejecución ha sido correcta
+ */
 function main2(filtro: string): string {
 let article1 =
   new Article("A modifie descent method-based heuristic for binary quadratic knapsack problems with conflict graphs"
