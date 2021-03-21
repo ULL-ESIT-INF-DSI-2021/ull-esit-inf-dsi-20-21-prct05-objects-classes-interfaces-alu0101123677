@@ -27,7 +27,7 @@ Declaramos dos array, uno que contiene los diferentes colores que vamos a usar y
 Lo siguiente es recorrer todo el array de colores y igualar cada color con el string correspondiente del array que ha recibido la función, si son iguales se le asigna a un string vacio el valor correspondiente, esto lo hacemos para la primera y segunda posición del array pasado por paramétros y luego concatenamos los dos string conseguidos y los retornamos como si fuera de un tipo number.
 
 
-### Ejercicio 2 Palabras encadenadas en un array.
+### [Ejercicio 2 Gestor bibliográfico.](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-alu0101123677/tree/master/src/ejercicio-2)
 
 En este ejercicio creamos la función meshArray que recibe un array de string con diversas palabras y retorna un string con un mensaje de error o con las partes encadenadas del array.
 
@@ -36,7 +36,7 @@ Declaramos una variable tipo string en donde se guardará la cadena concatenada.
 Luego realizamos un bucle for que dure tantas posiciones tenga el array pasado por parametros - 1 y en donde creamos y asignamos las variables que vamos a usar, en este caso dos variables de tipo string y dos varaibles de tipo number. Continuamos con un bucle while que irá desde la última letra de la primera palabra hasta su primera letra, comprobando si coincide con la primera letra de la segunda palabra. Una vez encontrada entramos en un bucle for que va desde la posición en la que se realizo la coincidencia avanzando para ir comprobando letra por letra.
 
 
-### Ejercicio 3 Calcular la media y concatenar cadenas.
+### [Ejercicio 3 Medios de transporte.](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-alu0101123677/tree/master/src/ejercicio-3)
 
 En este ejercicio creamos la función meanAndConcatenate que recibe un array de string con números y letras, y retorna un array de string que contiene la media de los números dados y la concatenación de las letras.
 
