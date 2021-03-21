@@ -88,5 +88,15 @@ export class Street {
     this.vehiculos.splice(position, 1);
   }
 
-  sortSpeed(){}
+  sortSpeed(){
+    this.vehiculos.sort(function(a, b) {
+      if (a.speed > b.speed) {
+        return 1;
+      }
+      if (a.speed < b.speed) {
+        return -1;
+      }
+      return 0;
+    });
+  }
 }

@@ -19,9 +19,13 @@ function main3 (){
   calle1.addVehicule("coche", 200);
   calle1.addVehicule("moto", 100);
   calle1.addVehicule("tren", 1000);
+  console.log(calle1.vehiculos);
   calle1.printStreet();
+  calle1.sortSpeed();
+  console.log(calle1.vehiculos);
   calle1.eliminateVehicule(0);
   calle1.printStreet();
+  console.log(calle1.vehiculos);
 }
 
 main3();
