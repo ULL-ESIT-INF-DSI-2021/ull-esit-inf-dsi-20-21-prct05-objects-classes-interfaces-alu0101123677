@@ -18,7 +18,7 @@ El objetivo principal de la práctica es la realización de diversos ejercicios 
 
 Para el desarrollo de la práctica cómo tal primero hay que hacer unas preparaciones previas, hay que aceptar la asignación de la práctica 5 y preparar el entorno del proyecto la práctica 5, para esto es necesario crear y configurar los archivos *package.json* y *tsconfig.jon* así cómo crear la **estructura de directorios**. Además de seguir las pautas para generar la documentación por **typedoc** y los **tests unitarios** realizados **mocha** y **chai**. 
 
-### Ejercicio 1 Pokedex.
+### [Ejercicio 1 Pokedex.](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-alu0101123677/tree/master/src/ejercicio-1)
 
 En este ejercicio creamos la función decodeResistor que recibe una cadena string con los colores de la resistencia y retornar un number con el valor de la resistencia. 
 
