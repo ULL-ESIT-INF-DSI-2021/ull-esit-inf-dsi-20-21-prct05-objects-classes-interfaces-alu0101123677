@@ -20,29 +20,23 @@ Para el desarrollo de la práctica cómo tal primero hay que hacer unas preparac
 
 ### [Ejercicio 1 Pokedex.](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-alu0101123677/tree/master/src/ejercicio-1)
 
-En este ejercicio creamos la función decodeResistor que recibe una cadena string con los colores de la resistencia y retornar un number con el valor de la resistencia. 
+En este ejercicio creamos las clases Pokemon y la clase Combat
 
-Declaramos dos array, uno que contiene los diferentes colores que vamos a usar y otro array que contendrá sus valores númericos correspondientes.
+En la clase Pokemon definiria los atributos de cada pokemon, recibe 8 privados paramteros, un nombre, un peso, una altura, un tipo, el ataque, la defensa, la velocidad y la vidad. Contamos luego con 16 métodos, 8 getters y 8 setters para conseguir las variables y modificarlas.
 
-Lo siguiente es recorrer todo el array de colores y igualar cada color con el string correspondiente del array que ha recibido la función, si son iguales se le asigna a un string vacio el valor correspondiente, esto lo hacemos para la primera y segunda posición del array pasado por paramétros y luego concatenamos los dos string conseguidos y los retornamos como si fuera de un tipo number.
+En la clase Combat llevará a cabo todo el combate entre los dos pokemons seleccionados, recibe dos objetos de la clase Pokemon, Pokemon1 y Pokemon2.  Contamos a su vez con dos métodos, el método start y el método damage.
 
+El método start lleva a cabo el combate entre los pokemons. Empezamos inicianlizando una variable booleana ``healt_zero`` a false, una variable number ``turn`` a uno, para ir contando cada turno y una variable de tipo number llamada ``winner`` a 0 para retornarla al final del método y saber que pokemon es el victorioso. Entramos en un bucle  while cuya condicioón es que ``healt_zero`` sea false, una vez que la vida de uno de los dos pokemon sea 0 o menor que 0 esta variable booleana se pondrá a true, en el bucle while inicializamos dos variables tipo number para comprobar quien ataca primero y quien ataca segundo dependiendo de la velocidad de ambos pokemon, cuando ataque uno de los pokemon se calculará el daño que hace a su contricante llamando al método damage y con los puntos de daño realizados se los restamos a la vida del pokemon contrincante.
+
+El método damage es una copia del ejercicio 9 de la práctica 3, calcula el daño que hace un pokemon a su contrincante pasandole por parametros el tipo del pokemon atacante, el tipo del pokemon contrincante, el ataque del pokemon y la defensa del pokemon contrincante. Retornando el daño que se realiza.
 
 ### [Ejercicio 2 Gestor bibliográfico.](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-alu0101123677/tree/master/src/ejercicio-2)
 
-En este ejercicio creamos la función meshArray que recibe un array de string con diversas palabras y retorna un string con un mensaje de error o con las partes encadenadas del array.
-
-Declaramos una variable tipo string en donde se guardará la cadena concatenada.
-
-Luego realizamos un bucle for que dure tantas posiciones tenga el array pasado por parametros - 1 y en donde creamos y asignamos las variables que vamos a usar, en este caso dos variables de tipo string y dos varaibles de tipo number. Continuamos con un bucle while que irá desde la última letra de la primera palabra hasta su primera letra, comprobando si coincide con la primera letra de la segunda palabra. Una vez encontrada entramos en un bucle for que va desde la posición en la que se realizo la coincidencia avanzando para ir comprobando letra por letra.
-
+En este ejercicio 
 
 ### [Ejercicio 3 Medios de transporte.](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-alu0101123677/tree/master/src/ejercicio-3)
 
-En este ejercicio creamos la función meanAndConcatenate que recibe un array de string con números y letras, y retorna un array de string que contiene la media de los números dados y la concatenación de las letras.
-
-declaramos dos string, un string contiene los números del 0 al 9 y el otro string contiene el alfabeto tanto en minusculas como en mayusculas.
-
-Lo que haremos es realizar un bucle for que recorra todo el array dado por parametro y vaya comparando cada elemento con los string declarados con anterioridad, si se trata de un numero se va añadiendo incrementalmente a una variable tipo number y aumentando un contador, si se trata de una letra se va concatenando a un string vacio inicialmente. Cuando se termine de recorrer todo el array se procede a conseguir la media de la suma de todos los números sumados y se añaden a un array vacio, tanto la media de los números como la concatenación de las letras y se retorna.
+En este ejercicio 
 
 
 ## 4. Conclusiones
