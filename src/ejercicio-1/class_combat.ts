@@ -1,9 +1,16 @@
 import { Pokemon } from "./class_pokemon";
-
+/**
+ * Clase Combat que lleva acabo todo el combate entre los pokemon.
+ * Recibe dos objetos de la clase Pokemon
+ */
 export class Combat {
   constructor(public pokemon1: Pokemon, public pokemon2: Pokemon){
     }
-      
+  
+  /**
+   * Función que lleva a cabo el combate entre los dos pokemon
+   * @returns retorna un number que indica que pokemon ha sido el vencedor
+   */  
   start(): number {
     console.log("¡¡¡El COMBATE EMPIEZA!!!");
     console.log(`Los combatientes son: ${this.pokemon1.getName()} y ${this.pokemon2.getName()}`);
@@ -65,7 +72,15 @@ export class Combat {
     }
     return winner;
   }
-
+  
+  /**
+   * Función que calcula el daño que realiza un pokemon a su contrincante
+   * @param type de tipo string que indica el tipo del pokemon atacante
+   * @param type_oponent de tipo string que indica el tipo del pokemon contrincante
+   * @param attack de tipo number que indica el ataque del pokemon
+   * @param defense de tipo number que indica la defensa del pokemon
+   * @returns retorna el daño calculado
+   */
   damage(type: string, type_oponent: string, attack: number, defense: number): number {
     if (type == type_oponent)
       return 50 * (attack / defense) * 0.5;

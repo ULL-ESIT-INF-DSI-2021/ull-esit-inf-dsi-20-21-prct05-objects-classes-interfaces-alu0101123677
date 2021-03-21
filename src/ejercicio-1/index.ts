@@ -1,6 +1,12 @@
 import {Pokemon} from './class_pokemon'
 import {Combat} from './class_combat'
 
+/**
+ * Función main del programa que inicializa los objetos de las clase pokemon y combat
+ * @param pokemon1 atributo tipo number que indica cual es el primer pokemon del combate
+ * @param pokemon2 atributo tipo number que indica cual es el segundo pokemon del combate
+ * @returns retorna un number que indica que pokemon a ganado
+ */
 function main(pokemon1: number, pokemon2:number): number {
 console.log("Iniciamos el programa Pokedex");
 
