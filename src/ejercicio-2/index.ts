@@ -46,5 +46,3 @@ gestor.table();
 return gestor.filter(filtro);
 
 }
-
-console.log(main2("Sudeep"));
