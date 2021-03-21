@@ -49,7 +49,33 @@ El método export exporta el formato APA para revista electrónica sin DOI, reci
 
 ### [Ejercicio 3 Medios de transporte.](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-alu0101123677/tree/master/src/ejercicio-3)
 
-En este ejercicio 
+En este ejercicio creamos la interfaz Movable y las clases Bike, Bus, Car, Motorbike, Peaton, Scooters, Train y Street.
+
+En la interfaz Movable definimos los atributos de todos los objetos, clases móviles. Define tres atributos, un tipo number que es la velocidad de los vehiculos, un tipo string que define como se desplazan los objetos y un tipo string que define que tipo de vehículo es.
+
+En la clase Bike definimos los atributos de todas las bicicletas. Define tres atributos, un tipo number que es la velocidad de los vehiculos, un tipo string que define como se desplazan los objetos y un tipo string que define que tipo de vehículo es.
+
+En la clase Bus definimos los atributos de todos los buses. Define tres atributos, un tipo number que es la velocidad de los vehiculos, un tipo string que define como se desplazan los objetos y un tipo string que define que tipo de vehículo es.
+
+En la clase Car definimos los atributos de todos los coches. Define tres atributos, un tipo number que es la velocidad de los vehiculos, un tipo string que define como se desplazan los objetos y un tipo string que define que tipo de vehículo es.
+
+En la clase Motorbike definimos los atributos de todas las motos. Define tres atributos, un tipo number que es la velocidad de los vehiculos, un tipo string que define como se desplazan los objetos y un tipo string que define que tipo de vehículo es.
+
+En la clase Peaton definimos los atributos de todos los peatones. Define tres atributos, un tipo number que es la velocidad de los vehiculos, un tipo string que define como se desplazan los objetos y un tipo string que define que tipo de vehículo es.
+
+En la clase Scooters definimos los atributos de todos los patinetes. Define tres atributos, un tipo number que es la velocidad de los vehiculos, un tipo string que define como se desplazan los objetos y un tipo string que define que tipo de vehículo es.
+
+En la clase Train definimos los atributos de todos los trenes. Define tres atributos, un tipo number que es la velocidad de los vehiculos, un tipo string que define como se desplazan los objetos y un tipo string que define que tipo de vehículo es.
+
+En la clase Street se realizan los diferentes métodos para mostrar la cantidad de vehículos diferentes, añadir vehículos, eliminar vehículos y ordenarlos por velocidad. Recibe un atributo de tipo string que indica el nombre de la calle, un tipo string que indica la dirección de la calle y un vector de objetos de las clase Car, Bus, Bike, Peaton, Motorbike, Scooters y Train. Contiene cuatro métodos, printStreet, addVehicule, eliminateVehicule y sortSpeed.
+
+El método printStreet muestra por pantalla cuantos vehiculos hay de cada tipi, para esto inicializamos varios contadores a 0 por cada tipo de vehiculos, realizamos un forEach al array de clases que tiene como atributo Street y vamos haciendo un if por cada tipo de vehiculo, si el tipo del vehiculo coincide se va sumando el contador y cuando se termina de recorrer todo el array se muestra en pantalla los resultados.
+
+El método addVehicule añade un vehiculo al array de clases que se encuentra como atributo de la clase Street, para esto recibe como parametros un string que indica que tipo de vehiculo vamos a añadir y su velocidad, luego hacemos un if para cada tipo de vehiculo, si coincide creamos un objeto de esa clase coincidente y relizamos un push al vector.
+
+El método eliminateVehicule elimina un vehiculo del vector de clases que se encuentra como atributo de la clase Street, para esto recibe como parametro la posición que queremos eliminar del array y la eliminamos con el uso de ``splice``.
+
+El método sortSpeed ordena los objetos del array de clases que se encuentra como atributo de la clase Street ordenandolos por la velocidad de cada objeto utilizando un sort y dentro de eso sort usando un método predeterminado para ordenar de menor a mayor.
 
 
 ## 4. Conclusiones
